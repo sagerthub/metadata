@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="https://www.fgdc.gov/metadata/csdgm-standard" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.fgdc.gov/metadata/csdgm-standard https://www.fgdc.gov/metadata/fgdc-std-001-1998.xsd">
+<idinfo>
+<citation>
+<citeinfo>
+<origin>Mid-Region Metropolitan Planning Organization, Mid-Region Council of Governments</origin>
+<pubdate>20200417</pubdate>
+<title>SE_DASZ_2016_2040_Trend</title>
+<geoform>vector digital data</geoform>
+<onlink>https://mrmpo.maps.arcgis.com/home/index.html</onlink>
+</citeinfo>
+</citation>
+<descript>
+<abstract>This layer represents the MRCOG 4.5 county area - Bernalillo, Sandoval, Torrance, and Valencia Counties and southern Santa Fe County in central New Mexico. Counties are divided into data analysis sub-zones (DASZs). DASZs are contiguous and cover the entire county area. Attribute information includes 2016 estimates and 2040 projections for population, housing, and employment. 
+
+The 2016 population estimates were derived from Esri Business Analyst Online. Esri uses a cohort survival model to carry the 2010 Census population block data forward to 2016. The 2016 housing figures were derived by advancing the 2010 Census block data to 2016 using residential building permits issued between 2010 and 2015. The 2016 employment estimate is based employment data purchased from a third party vendor, Infogroup. This data was checked and verified through phone calls, internet searches and against previous employment databases. This file was smoothed to match county control targets that were independently derived from the Quarterly Census of Employment and Wages by County supplemented with uncovered military, self-employment, and agricultural employment estimates. 
+
+The regional projection for population is based on county-level population projections developed by the University of New Mexico’s Geospatial and Population Studies (GPS) in 2016. The regional employment projection was developed by MRCOG using a combination of sources including University of New Mexico’s Bureau of Business and Economic Research (BBER) and a locally customized Regional Economic Model (REMI). The DASZ level forecast is developed with the assistance of a land use simulation modeling system (UrbanSim) that is estimated and calibrated specifically for the MRCOG region. Inputs include existing population (US Census Bureau and Esri), employment (Quarterly Census of Employment and Wages and InfoGroup), land use inventories, recent building permits, development review cases, local plans (including sector plans, area plans, master plans, etc.), local zoning regulation (including allowable uses and densities), vacancy rates, development costs, building square footage, undevelopable lands, and information collected through developer and planner interviews.</abstract>
+<purpose>Mid-Region Council of Governments (MRCOG) DASZ datasets describe current and forecast socioeconomic characteristics, including population, housing, and employment. DASZs (data analysis subzones) represent transportation planning zones, which are small units of geography compatible with MRCOG's transportation model. These datasets are created by MRCOG to understand existing transportation trends and project future travel demand in the region. Their use extends beyond travel demand forecasting to land use planning and economic development.</purpose>
+</descript>
+<timeperd>
+<timeinfo>
+<mdattim>
+<sngdate>
+<caldate>20160101</caldate>
+</sngdate>
+<sngdate>
+<caldate>20400101</caldate>
+</sngdate>
+</mdattim>
+</timeinfo>
+<current>These data represent the MRCOG planning area in central New Mexico and were published in April 2020. The socioeconomic and travel demand forecast models used 2016 as the base year (start) and 2040 as the horizon year (end). Data for 2016 are estimates and data for 2040 are projections and are subject to the use limitations described in this metadata document.</current>
+</timeperd>
+<status>
+<progress>Complete</progress>
+<update>As needed</update>
+</status>
+<spdom>
+<bounding>
+<westbc>-107.630356</westbc>
+<eastbc>-105.270760</eastbc>
+<northbc>36.227687</northbc>
+<southbc>34.252357</southbc>
+</bounding>
+</spdom>
+<keywords>
+<theme>
+<themekt>ISO 19115 Topic Categories</themekt>
+<themekey>economy</themekey>
+<themekey>society</themekey>
+</theme>
+<theme>
+<themekt>None</themekt>
+<themekey>socioeconomic</themekey>
+<themekey>socioeconomics</themekey>
+<themekey>forecast</themekey>
+<themekey>horizon year</themekey>
+<themekey>2040</themekey>
+<themekey>MRCOG</themekey>
+</theme>
+</keywords>
+<accconst>None</accconst>
+<useconst>None</useconst>
+<ptcontac>
+<cntinfo>
+<cntorgp>
+<cntorg>Mid-Region Council of Governments</cntorg>
+</cntorgp>
+<cntpos>GIS Coordinator</cntpos>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>809 Copper Avenue NW</address>
+<city>Albuquerque</city>
+<state>New Mexico</state>
+<postal>87102</postal>
+<country>US</country>
+</cntaddr>
+<cntvoice>505-247-1750</cntvoice>
+<cntemail>gis@mrcog-nm.gov</cntemail>
+</cntinfo>
+</ptcontac>
+<datacred>Mid-Region Metropolitan Planning Organization (MRMPO); Mid-Region Council of Governments (MRCOG). The 2016 DASZ dataset contains data from the 2010 US Decennial Census, Esri, the New Mexico Department of Workforce Solutions, InfoUSA, and the New Mexico Public Education Department.</datacred>
+<native>Esri ArcGIS 12.9.0.32739</native>
+</idinfo>
+<dataqual>
+<attracc>
+<attraccr>Values in the DASZ2010 field were reviewed for frequency and were found to be unique (i.e., each value occurs only once). Values for population, housing, and employment should be considered estimates for 2016 and projections for 2040. All records have a value in every field. Some values may be zero (0), but there are no null (NoData, NaN, etc.) values.</attraccr>
+</attracc>
+<logic>DASZs are contiguous and cover the entire MRCOG region and entire county areas (except for Santa Fe County). Geometry and attributes were evaluated with ArcGIS geoprocessing tools, such as Check Geometry, and Python scripts using ArcPy and other modules.</logic>
+<complete>Any gap in regional coverage should be considered an error in geometry and not an intentional omission. Santa Fe County is the exception; the MRCOG region only includes southern Santa Fe County. All records have a value in every field. Some values may be zero (0), but there are no null (NoData, NaN, etc.) values.</complete>
+<lineage>
+<srcinfo>
+<typesrc>None</typesrc>
+<srccontr></srccontr>
+</srcinfo>
+<procstep>
+<procdesc>The 2016 population estimates were derived from Esri Business Analyst Online. Esri uses a cohort survival model to carry the 2010 Census population block data forward to 2016. The 2016 housing figures were derived by advancing the 2010 Census block data to 2016 using residential building permits issued between 2010 and 2015. The 2016 employment estimate is based employment data purchased from a third party vendor, Infogroup. This data was checked and verified through phone calls, internet searches and against previous employment databases. This file was smoothed to match county control targets that were independently derived from the Quarterly Census of Employment and Wages by County supplemented with uncovered military, self-employment, and agricultural employment estimates. The regional projection for population is based on county-level population projections developed by the University of New Mexico’s Geospatial and Population Studies (GPS) in 2016. The regional employment projection was developed by MRCOG using a combination of sources including University of New Mexico’s Bureau of Business and Economic Research (BBER) and a locally customized Regional Economic Model (REMI). The DASZ level forecast is developed with the assistance of a land use simulation modelling system (UrbanSim) that is estimated and calibrated specifically for the MRCOG region. Inputs include existing population (US Census Bureau and Esri), employment (Quarterly Census of Employment and Wages and InfoGroup), land use inventories, recent building permits, development review cases, local plans (including sector plans, area plans, master plans, etc.), local zoning regulation (including allowable uses and densities), vacancy rates, development costs, building square footage, undevelopable lands, and information collected through developer and planner interviews. This dataset contains data from the 2010 US Decennial Census, Esri, the New Mexico Department of Workforce Solutions, InfoUSA, and the New Mexico Public Education Department.</procdesc>
+<procdate>20200417</procdate>
+</procstep>
+</lineage>
+</dataqual>
+<spdoinfo>
+<indspref>DASZs represent transportation planning zones, which are small units of geography compatible with MRCOG's transportation model. They are generally smaller than census tracts and in some cases may nest within tracts. Their boundaries are generally visible features of the landscape. In the attribute table, each DASZ has a unique ID and a record of the county in which it is located.</indspref>
+<direct>Vector</direct>
+<ptvctinf>
+<sdtsterm>
+<sdtstype>GT-polygon composed of chains</sdtstype>
+<ptvctcnt>926</ptvctcnt>
+</sdtsterm>
+</ptvctinf>
+</spdoinfo>
+<spref>
+<horizsys>
+<planar>
+<gridsys>
+<gridsysn>NAD 1983 (2011) StatePlane New Mexico Central FIPS3002 (US Feet)</gridsysn>
+<spcs>
+<spcszone>3002</spcszone>
+<transmer>
+<sfctrmer>0.9999</sfctrmer>
+<longcm>-106.25</longcm>
+<latprjo>31.0</latprjo>
+<feast>1640416.666666667</feast>
+<fnorth>0.0</fnorth>
+</transmer>
+</spcs>
+</gridsys>
+<planci>
+<plance>coordinate pair</plance>
+<coordrep>
+<absres>0.000328083333333333</absres>
+<ordres>0.000328083333333333</ordres>
+</coordrep>
+<plandu>US Survey Feet</plandu>
+</planci>
+</planar>
+<geodetic>
+<horizdn>NAD 1983 (2011)</horizdn>
+<ellips>GRS 1980</ellips>
+<semiaxis>6378137.0</semiaxis>
+<denflat>298.257222101</denflat>
+</geodetic>
+</horizsys>
+</spref>
+<eainfo>
+<detailed>
+<enttyp>
+<enttypl>SE_DASZ_2016_2040_Trend</enttypl>
+<enttypd>Spatial data layer comprising vector representations of areas and related attribute information.</enttypd>
+<enttypds>MRCOG</enttypds>
+</enttyp>
+<attr>
+<attrlabl>OBJECTID</attrlabl>
+<attrdef>Internal feature number.</attrdef>
+<attrdefs>Esri</attrdefs>
+<attrdomv>
+<udom>Sequential unique whole numbers that are automatically generated.</udom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>Shape</attrlabl>
+<attrdef>Feature geometry.</attrdef>
+<attrdefs>Esri</attrdefs>
+<attrdomv>
+<udom>Coordinates defining the features.</udom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>Shape_Length</attrlabl>
+<attrdef>Length of feature in internal units.</attrdef>
+<attrdefs>Esri</attrdefs>
+<attrdomv>
+<udom>Positive real numbers that are automatically generated.</udom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>Shape_Area</attrlabl>
+<attrdef>Area of feature in internal units squared.</attrdef>
+<attrdefs>Esri</attrdefs>
+<attrdomv>
+<udom>Positive real numbers that are automatically generated.</udom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>DASZ2010</attrlabl>
+<attrdef>Unique identifier of the Data Analysis Sub-zone (DASZ).</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<udom>Unique, 4-character identifiers.</udom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>COUNTY</attrlabl>
+<attrdef>Name of the county in which the DASZ is located.</attrdef>
+<attrdefs>Geographic Names Information System (GNIS)</attrdefs>
+<attrdomv>
+<edom>
+<edomv>Bernalillo</edomv>
+<edomvd>Bernalillo County, New Mexico, USA.</edomvd>
+<edomvds>Geographic Names Information System (GNIS)</edomvds>
+</edom>
+<edom>
+<edomv>Sandoval</edomv>
+<edomvd>Sandoval County, New Mexico, USA.</edomvd>
+<edomvds>Geographic Names Information System (GNIS)</edomvds>
+</edom>
+<edom>
+<edomv>Santa Fe</edomv>
+<edomvd>Santa Fe County, New Mexico, USA.</edomvd>
+<edomvds>Geographic Names Information System (GNIS)</edomvds>
+</edom>
+<edom>
+<edomv>Torrance</edomv>
+<edomvd>Torrance County, New Mexico, USA.</edomvd>
+<edomvds>Geographic Names Information System (GNIS)</edomvds>
+</edom>
+<edom>
+<edomv>Valencia</edomv>
+<edomvd>Valencia County, New Mexico, USA.</edomvd>
+<edomvds>Geographic Names Information System (GNIS)</edomvds>
+</edom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>POP16</attrlabl>
+<attrdef>Estimated total population in the DASZ for 2016.</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0</rdommin>
+<rdommax>6355</rdommax>
+<attrunit>persons</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>HHPOP16</attrlabl>
+<attrdef>Estimated population living in households in the DASZ for 2016.</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0</rdommin>
+<rdommax>6355</rdommax>
+<attrunit>persons</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>HH16</attrlabl>
+<attrdef>Estimated number of households (occupied dwelling units) in the DASZ for 2016.</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0</rdommin>
+<rdommax>2422</rdommax>
+<attrunit>dwellings</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>DU16</attrlabl>
+<attrdef>Estimated number of residential dwelling units in the DASZ for 2016.</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0</rdommin>
+<rdommax>2683</rdommax>
+<attrunit>dwellings</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>SF16</attrlabl>
+<attrdef>Estimated number of single-family residential dwelling units in the DASZ for 2016.</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0</rdommin>
+<rdommax>2182</rdommax>
+<attrunit>dwellings</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>MF16</attrlabl>
+<attrdef>Estimated number of multi-family residential dwelling units in the DASZ for 2016.</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0</rdommin>
+<rdommax>2085</rdommax>
+<attrunit>dwellings</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>EMP16</attrlabl>
+<attrdef>Estimated total employment (number of people employed) in the DASZ for 2016.</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0</rdommin>
+<rdommax>17817</rdommax>
+<attrunit>persons</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>BASIC16</attrlabl>
+<attrdef>Estimated number of people employed in the basic sector in the DASZ for 2016. Basic is defined as NAICS codes 11-42 and 48-51.</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0</rdommin>
+<rdommax>17493</rdommax>
+<attrunit>persons</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>RETAIL16</attrlabl>
+<attrdef>Estimated number of people employed in the retail sector in the DASZ for 2016. Retail is defined as NAICS codes 44-45 and 722.</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0</rdommin>
+<rdommax>2179</rdommax>
+<attrunit>persons</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>SERVICE16</attrlabl>
+<attrdef>Estimated number of people employed in the service sector in the DASZ for 2016. Service is defined as NAICS codes 52-71, 721, and 81-92.</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0</rdommin>
+<rdommax>12021</rdommax>
+<attrunit>persons</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>POP40</attrlabl>
+<attrdef>Projected total population in the DASZ for 2040.</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0</rdommin>
+<rdommax>6321</rdommax>
+<attrunit>persons</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>HHPOP40</attrlabl>
+<attrdef>Projected population living in households in the DASZ for 2040.</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0</rdommin>
+<rdommax>6321</rdommax>
+<attrunit>persons</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>HH40</attrlabl>
+<attrdef>Projected number of households (occupied dwelling units) in the DASZ for 2040.</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0</rdommin>
+<rdommax>2518</rdommax>
+<attrunit>dwellings</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>DU40</attrlabl>
+<attrdef>Projected number of residential dwelling units in the DASZ for 2040.</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0</rdommin>
+<rdommax>2787</rdommax>
+<attrunit>dwellings</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>SF40</attrlabl>
+<attrdef>Projected number of single-family residential dwelling units in the DASZ for 2040.</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0</rdommin>
+<rdommax>2448</rdommax>
+<attrunit>dwellings</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>MF40</attrlabl>
+<attrdef>Projected number of multi-family residential dwelling units in the DASZ for 2040.</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0</rdommin>
+<rdommax>2355</rdommax>
+<attrunit>dwellings</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>EMP40</attrlabl>
+<attrdef>Projected total employment (number of people employed) in the DASZ for 2040.</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0</rdommin>
+<rdommax>18917</rdommax>
+<attrunit>persons</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>BASIC40</attrlabl>
+<attrdef>Projected number of people employed in the basic sector in the DASZ for 2040. Basic is defined as NAICS codes 11-42 and 48-51.</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0</rdommin>
+<rdommax>18917</rdommax>
+<attrunit>persons</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>RETAIL40</attrlabl>
+<attrdef>Projected number of people employed in the retail sector in the DASZ for 2040. Retail is defined as NAICS codes 44-45 and 722.</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0</rdommin>
+<rdommax>1884</rdommax>
+<attrunit>persons</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>SERVICE40</attrlabl>
+<attrdef>Projected number of people employed in the service sector in the DASZ for 2040. Service is defined as NAICS codes 52-71, 721, and 81-92.</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>0</rdommin>
+<rdommax>12584</rdommax>
+<attrunit>persons</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>MODELAREA</attrlabl>
+<attrdef>Inclusion/exclusion indicator of whether the DASZ is located within MRMPO's Travel Demand Model Area (TDMA).</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<edom>
+<edomv>1</edomv>
+<edomvd>The DASZ is located within the TDMA.</edomvd>
+<edomvds>MRCOG</edomvds>
+</edom>
+<edom>
+<edomv>0</edomv>
+<edomvd>The DASZ is not located within the TDMA.</edomvd>
+<edomvds>MRCOG</edomvds>
+</edom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>AMPA</attrlabl>
+<attrdef>Inclusion/exclusion indicator of whether the DASZ is located within the Albuquerque Metropolitan Planning Area (AMPA).</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<edom>
+<edomv>1</edomv>
+<edomvd>The DASZ is located within the AMPA.</edomvd>
+<edomvds>MRCOG</edomvds>
+</edom>
+<edom>
+<edomv>0</edomv>
+<edomvd>The DASZ is not located within the AMPA.</edomvd>
+<edomvds>MRCOG</edomvds>
+</edom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>RIVER</attrlabl>
+<attrdef>Position of the DASZ in relation to the Rio Grande (river).</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<edom>
+<edomv>E</edomv>
+<edomvd>The DASZ is located east of the Rio Grande.</edomvd>
+<edomvds>MRCOG</edomvds>
+</edom>
+<edom>
+<edomv>W</edomv>
+<edomvd>The DASZ is located west of the Rio Grande.</edomvd>
+<edomvds>MRCOG</edomvds>
+</edom>
+</attrdomv>
+</attr>
+<attr>
+<attrlabl>ACRES</attrlabl>
+<attrdef>Area of the DASZ.</attrdef>
+<attrdefs>MRCOG</attrdefs>
+<attrdomv>
+<rdom>
+<rdommin>12.0175807764</rdommin>
+<rdommax>572407.308171</rdommax>
+<attrunit>acres</attrunit>
+</rdom>
+</attrdomv>
+</attr>
+</detailed>
+</eainfo>
+<metainfo>
+<metd>20211215</metd>
+<metc>
+<cntinfo>
+<cntorgp>
+<cntorg>Mid-Region Council of Governments</cntorg>
+</cntorgp>
+<cntpos>GIS Coordinator</cntpos>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>809 Copper Avenue NW</address>
+<city>Albuquerque</city>
+<state>New Mexico</state>
+<postal>87102</postal>
+<country>US</country>
+</cntaddr>
+<cntvoice>505-247-1750</cntvoice>
+<cntemail>gis@mrcog-nm.gov</cntemail>
+</cntinfo>
+</metc>
+<metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+<metstdv>FGDC-STD-001-1998</metstdv>
+<mettc>local time</mettc>
+</metainfo>
+</metadata>
