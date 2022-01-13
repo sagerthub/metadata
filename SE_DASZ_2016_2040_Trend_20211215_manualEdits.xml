@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="styles/MetadataWizardStylesheet.xsl"?>
+<?xml-stylesheet type="text/xsl" href="MetadataWizardStylesheet.xsl"?>
 <metadata xmlns="https://www.fgdc.gov/metadata/csdgm-standard" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.fgdc.gov/metadata/csdgm-standard https://www.fgdc.gov/metadata/fgdc-std-001-1998.xsd">
 <idinfo>
 <citation>
